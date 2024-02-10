@@ -1,0 +1,100 @@
+.page-link {
+    background-color: #f9f9f9;
+    color: $themeColor;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+.page-item:not(:first-child) .page-link{
+    margin-right: 7px;
+}
+.page-item .active{
+    background-color: $themeColor;
+    color: lightblue;
+}
+.page-item a{
+    transition: $transition-4;
+}
+.page-item:hover a{
+    background-color: $themeColor;
+    color: $lightColor;
+}
+.category-heading h2{
+    color: $fontColor;
+    font-size: 23px;
+    background-color: rgb(205, 213, 224);
+    padding: 7px 15px ;
+    border-left: 5px solid rgb(11, 122, 212);
+}
+.tags li a{
+    color: $darkColor;
+}
+.tags li{
+    transition: $transition-4;
+}
+.tags li:hover a{
+    color: $themeColor;
+}
+.article-img{
+    height: 94px;
+}
+.Article-content p{
+    font-size: 13px;
+    color: rgb(11, 122, 212,);
+    font-weight: 700;
+}
+.Article-content h3{
+    font-size: 19px;
+    line-height: 1.3;
+}
+.Article-content h3 a{
+    color: $themeColor;
+}
+.arrival-content h3 a{
+    color: $darkColor;
+    font-size: 21px;
+    font-weight: 700;
+}
+.arrival-content span{
+    font-weight: 700;
+    font-size: 18px;
+}
+#new-arrivals .owl-nav button.owl-prev,
+#new-arrivals .owl-nav button.owl-next{
+    background-color: $themeColor;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.selling-conent h4 a{
+  font-size: 22px;
+  color: $darkColor;
+  font-weight: 700;
+}
+.selling-conent span{
+    font-weight: 700;
+    font-size: 18px;
+}
+.selling-img{
+    height: 195px;
+}
+.filtering a{
+    color: $themeColor;
+    font-size: 18px;
+}
+.offcanvas{
+    width: 55%!important;
+}
+.blog-main{
+    height:  100vh;
+}
+.top-sticky {
+    position: fixed;
+    top: 0;
+}
+.bottom-sticky {
+    position: fixed;
+    bottom: 0;
+    top: auto;
+}

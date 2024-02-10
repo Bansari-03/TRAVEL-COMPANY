@@ -1,0 +1,95 @@
+.about-summary h3{
+    color: $themeColor;
+    font-weight: 700;
+    font-size: 23px;
+  }
+  
+  .explore-sec{
+      background-color: #f9f9f9;
+  }
+  .explore-content h2{
+     color: $themeColor;
+  }
+  .explore-btn button{
+      background-color: rgb(11, 122, 212);
+      border: none;
+      outline: none;
+      color: $lightColor;
+      padding: 10px 15px;
+      transition: $transition-4;
+  }
+  .explore-btn button:hover{
+      background-color: $themeColor;
+  }
+  .team-head{
+      color: $themeColor;
+      font-weight: 700;
+  }
+  .team-member-name h4{
+      color: $themeColor;
+  }
+  .team-member-img{
+      position: relative;
+  }
+  .team-member-img::before{
+      content: '';
+      position: absolute;
+      height: 10px;
+      width: 0;
+      bottom: 0;
+      background-color: rgb(140, 140, 230);
+      transition: 1s;
+      z-index: 1;
+  }
+  .team-member-img::after{
+      content: '';
+      position: absolute;
+      background: linear-gradient(0deg, rgba(0, 0, 0,0.8), transparent);
+      width: 100%;
+      height: 150px;
+      transition: linear $transition-4;
+      bottom: 0;
+      top: auto;
+      left: 0;
+      opacity: 0;
+  }
+  .team:hover .team-member-img::before{
+      width: 100%;
+  }
+  .team:hover .team-member-img::after{
+      opacity: 1;
+  }
+  .team-social{
+      width: 100%;
+      position: absolute;
+      opacity: 0;
+      visibility: hidden;
+      transition: $transition-4;
+      bottom: 0;
+  }
+  .team-social li{
+      transition: $transition-4;
+  }
+  .team:hover .team-social li:nth-child(1){
+      transition-delay: .1s
+  }
+  .team:hover .team-social li:nth-child(2){
+      transition-delay: .2s
+  }
+  .team:hover .team-social li:nth-child(3){
+      transition-delay: .3s
+  }
+  .team:hover .team-social{
+      bottom: 20%;
+  }
+  .team-social li a i{
+      color: $lightColor;
+      transition: $transition-4;
+  }
+  .team-social li a i:hover{
+      color: #19476e;
+  }
+  .team:hover .team-social{
+      opacity: 1;
+      visibility: visible;
+  }

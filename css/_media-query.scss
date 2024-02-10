@@ -1,0 +1,200 @@
+@media screen and (min-width: 567px){
+    .banner-content{
+        text-align: center;
+        top: 8%;
+        h3{
+           
+            font-size: 42px!important;
+            font-weight: 700;
+             background-color: transparent;
+             color: $lightColor;
+            span{
+             font-weight: 700;
+             background-color: transparent;
+             color: $lightColor
+            }
+        }
+        h2{
+            font-size: 42px;
+           font-weight: 700;
+           color: $lightColor;
+        }
+    }
+    .bg-clr{
+        padding: 45px 0;
+    }
+    .search-content{
+      
+    
+        h3{
+            font-size: 30px !important;
+            
+        }
+        p{
+            font-size: 14px;
+        }
+         
+    }
+    .family-para{
+        font-size: 16px;
+    }
+    .budget-content h3 {
+        font-size: 31px!important;
+    }
+    .budget-content p {
+        font-size: 15px;
+    }
+    .blog-heading h3{
+        font-size: 30px!important;
+    }
+    .blog-heading p {
+        font-size: 15px;
+    }
+
+    
+}
+@media screen and (min-width: 768px){
+    .mob-main-menu{
+        width: 50%!important;
+    }
+
+    .banner-content{
+        top: 8%;
+        text-align: left;
+        h3{
+           
+           font-size: 42px!important;
+           font-weight: 700;
+            background-color: transparent;
+            color: $lightColor;
+           span{
+            font-weight: 700;
+            background-color: transparent;
+            color: $lightColor
+           }
+        }
+        h2{
+           font-size: 42px;
+           font-weight: 700;
+           color: $lightColor;
+            
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+    .input-mail button{
+        background-color: rgb(61, 61, 226);
+        color: $lightColor;
+        padding: 15px 50px;
+        border: none;
+        outline: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+}
+@media screen and (min-width: 992px){
+    
+    .banner-content{
+        top: 8%;
+    
+        h3{
+           color: $lightColor;
+           font-weight: 700;
+           font-size: 52px;
+           span{
+            font-weight: 300;
+            background-color: $lightColor;
+            color: $themeColor;
+           }
+        }
+        h2{
+           color: $lightColor;
+           font-size: 73px;
+           font-weight: 700;
+        }
+        p{
+            color: $lightColor;
+            font-size: 19px;
+        }
+        .mob-testimonial{
+            position: absolute;
+            background-color: $themeColor;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+@media screen and (min-width: 1200px){
+    .nav-menu li a {
+        padding: 40px 16px;
+    }
+
+    .banner-content{
+        top: 20%;
+    
+        h3{
+           color: $lightColor;
+           font-weight: 700;
+           font-size: 74px;
+           span{
+            font-weight: 300;
+            background-color: $lightColor;
+            color: $themeColor;
+           }
+        }
+        h2{
+           color: $lightColor;
+           font-size: 83px;
+           font-weight: 700;
+        }
+        p{
+            color: $lightColor;
+            font-size: 19px;
+        }
+    }
+   
+
+    .banner-heading::before{
+    content: '';
+    position:absolute;
+    width: 52%;
+    height: 100%;
+    background: url('../assets/banner-White-Reverse.gif');
+    background-repeat: no-repeat;
+    left: 43%
+   }
+
+
+.search-content::before{
+    content: '';
+    position: absolute;
+    background: url('../assets/bgplane1.svg');
+    width: 100%;
+    height: 432px;
+    background-repeat: no-repeat;
+    max-width: 300px;
+    left: -277px;
+    top: -102px;
+}
+.search-content::after{
+    content: '';
+    position: absolute;
+    background: url('../assets/bgplane2.svg');
+    background-repeat: no-repeat;
+    max-width: 403px;
+    width: 100%;
+    height: 432px;
+    top: -46px;
+    right: -273px
+}
+.bg-clr{
+    padding: 160px 0;
+    margin-top: 100px;
+}
+.search-content h3 {
+    font-size: 35px !important;
+}
+}

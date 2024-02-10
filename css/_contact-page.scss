@@ -1,0 +1,62 @@
+.contact-box{
+    border: 1px solid gray;
+    padding: 30px;
+    height: 100%;
+  }
+  .contact-bg-clr{
+    background-color: #f9f9f9;
+  }
+  .contact-box h3{
+      color: $themeColor;
+      font-size: 23px;
+      font-weight: 700;
+  }
+  .contact-box p{
+      color: $darkColor;
+      font-size: 18px;
+  }
+  .contact-box:hover{
+      border-color: $themeColor;
+  }
+  .contact-heading{
+      color: $themeColor;
+      font-weight: 700;
+      font-size: 40px;
+  }
+  .contact-input-txt input{
+      border: 1px solid gray;
+      outline: none;
+      padding: 15px 20px;
+  }
+  .contact-input-txt textarea{
+      border: 1px solid gray;
+      outline: none;
+      padding: 15px 20px;
+      resize: none;
+  }
+  .contact-info-btn button{
+      background-color: blue;
+      color: $lightColor;
+      border: none;
+      outline: none;
+      padding: 10px 30px;
+      transition: $transition-4;
+  }
+  .contact-info-btn button:hover{
+      background-color: $themeColor;
+  }
+  .contact-location iframe{
+      width: 100%;
+      height: 100%;
+  }
+  .location-box{
+      background-color: #f9f9f9;
+      padding: 40px;
+  }
+  .adress{
+      font-size: 19px;
+  }
+  .location-heading h2{
+      color: $themeColor;
+      font-weight: 700;
+  }

@@ -1,0 +1,297 @@
+.top_header{
+    background-color: $darkColor;
+    padding: 10px 0;
+    width: 100%
+}
+.contact-number{
+    @extend  %link-color;
+    transition: $transition-4
+}
+.email{
+    @extend %link-color;
+    transition: $transition-4
+}
+.social-icon li a{
+    @extend %link-color;
+}
+.header-news{
+    @extend %link-color;
+    @include flex-proparties;
+}
+.top-header-last{
+    @include flex-proparties-end
+}
+.form-select{
+    background-color: transparent;
+    color: $lightColor;
+    background-image: none;
+    border: none;
+    padding: 0 5px;
+}
+.social-icon li a{
+    padding: 0 7px;
+}
+.fa-angle-down:before {
+    vertical-align: middle;
+}
+.social-icon li a i{
+    color: $lightColor;
+    transition: $transition-4;
+}
+.social-icon li a i:hover{
+    @extend %hover-color;
+}
+.contact-number:hover{
+    @extend %hover-color;
+}
+.email:hover{
+    @extend %hover-color;
+}
+.top-header-last > select > option:hover{
+    @extend %hover-color;
+}
+.country{
+    cursor: pointer;
+}
+.country option{
+    color: $darkColor;
+}
+.form-select:focus{
+    box-shadow: none;
+}
+.countries{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+}
+.country:hover~ .countries{
+    opacity: 1;
+    visibility: visible;
+}
+.laung option{
+    color: $darkColor;
+    padding: 10px ;
+}
+header{
+    background-color: $themeColor;
+}
+.nav-menu  li{
+    position: relative;
+    transition: $transition-4;
+}
+.nav-menu li > a,
+.breadcrumb-item a{
+    position: relative;
+}
+.nav-menu li > a::before,
+.breadcrumb-item a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: $lightColor;
+    top: 65%;
+    transition: .7s ease-in-out;
+}
+.nav-menu li:hover > a::before{
+    width: 65%;
+}
+.nav-menu li > a{
+    color: $lightColor;
+    padding: 40px 8px;
+    display: block;
+    font-size: 14px;
+}
+.custom-icons li{
+    width: 40px;
+    height: 40px;
+    background-color: $lightColor;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    transition: $transition-4;
+}
+.custom-icons li a{
+    padding: 0 10px;
+}
+.custom-icons li:hover{
+    background-color: $themeColor;
+}
+.custom-icons li:hover a i{
+    color: $lightColor;
+}
+.custom-icons li a i{
+    color: $darkColor;
+}
+.sub-menu{
+    position: absolute;
+    top: 100%;
+    background-color: $lightColor;
+    box-shadow: 0 0 4px gray;
+    width: 170px;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: $transition-4;
+    z-index: 50;
+}
+.sub-menu li{
+    transition: $transition-4;
+}
+
+.sub-menu li a{
+    color: $darkColor;
+    padding: 5px 10px!important;
+}
+.sub-menu li:hover a{
+    color: $themeColor;
+}
+.nav-menu li:hover .sub-menu{
+    top: 80%;
+    opacity: 1;
+    visibility: visible;
+}
+.ps-rel{
+    position: relative;
+}
+.nav-menu li:nth-child(2){
+    position: unset;
+}
+.mega-menu{
+    position: absolute;
+    box-shadow: 0 0 2px gray;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    z-index: 50;
+    background-color: $lightColor;
+    opacity: 0;
+    visibility: hidden;
+    transition: $transition-4;
+}
+
+.mega-list,
+.mob-mega-list{
+    list-style-type: circle;
+}
+.mega-list li a,
+.mob-mega-list li a{
+    color: $darkColor!important;
+    position: relative;
+    transition: $transition-4;
+}
+.mega-list li a:hover,
+.mob-mega-list li a:hover{
+    color: $themeColor!important;
+}
+.nav-menu li:hover .mega-menu{
+    top: 80%;
+    opacity: 1;
+    visibility: visible;
+}
+.mega-sec h3,
+.mob-mega-sec h3{
+    color: $darkColor;
+    font-size: 19px;
+    transition: $transition-4;
+    cursor: pointer;
+}
+.mega-sec h3:hover,
+.mob-mega-sec h3:hover{
+    color: $themeColor;
+}
+
+.mob-main-menu::-webkit-scrollbar {
+  display: none;
+ }
+
+.mega-menu li a,
+.mob-main-menu li a{
+    padding: 5px 0 !important;
+    color: $darkColor;
+}
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000!important;
+}
+
+// mob nav start
+.mob-main-menu{
+    background-color: $themeColor;
+    width: 85%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    position: absolute;
+    z-index: 10;
+    overflow: hidden;
+    transform: translateX(-100%);
+    transition: $transition-4;
+
+}
+.mob-main-menu li a{
+    color: $lightColor;
+    font-size: 17px;
+    padding: 10px 13px;
+    display: block;
+    width: 100%;
+   
+}
+.mob-active{
+    background-color: #19476e;
+}
+.arrow{
+    right: 10px;
+}
+.mob-sub-menu{
+    background-color: $lightColor;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 70vh;
+    transform: translateX(100%);
+    transition: $transition-4;
+}
+.mob-mega-menu{
+    width: 100%;
+    height: 70vh;
+    top: 0;
+    transform: translateX(100%);
+    overflow-y: scroll;
+    position: absolute; 
+    background-color: $lightColor;
+    transition: $transition-4;
+    z-index: 50;
+}
+.mob-user span:nth-child(2){
+      color: $lightColor;
+      padding-left: 15px;
+}
+.mob-social-icon li a{
+   padding: 5px;
+}
+.mob-sub-menu li a{
+    color: $darkColor;
+}
+.page:hover .mob-sub-menu{
+    left: 0;
+}
+.open{
+    transform: translateX(0);
+    transition: $transition-4;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(17, 17, 17, .5);
+}
+
+// mob nav end

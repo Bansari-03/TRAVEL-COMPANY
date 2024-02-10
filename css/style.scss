@@ -1,0 +1,664 @@
+// .sidebar-sticky{
+//     position: fixed;
+//     width: 100%;
+//     top: 10%;
+// }
+/* Sticky from top */
+.sticky-top {
+    position: fixed;
+    top: 0;
+    z-index: 1000; /* Adjust z-index as needed */
+}
+
+/* Sticky from bottom */
+.sticky-bottom {
+    position: fixed;
+    bottom: 0;
+    z-index: 1000; /* Adjust z-index as needed */
+}
+
+
+/* poppins-300 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/poppins-v20-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/poppins-v20-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.ptb-40{
+    padding: 40px 0;
+}
+.ptb-80{
+    padding: 40px 0;
+}
+.pt-80{
+    padding-top: 80px;
+}
+
+.pt-100{
+    padding-top: 100px;
+}
+.ptb-100{
+    padding: 100px 0;
+}
+
+body {
+    font: {
+        family: 'Poppins';
+        style: normal;
+        weight: 400;
+    }
+}
+// variables
+$lightColor: #fff;
+$darkColor: #000;
+$themeColor: #194d7a;
+$hoverColor: rgb(160, 160, 238);
+$transition-4: .4s;
+$fontColor:#474747;
+
+// mixins
+@mixin flex-proparties{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin flex-proparties-end{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+// extents
+%link-color{
+    color: $lightColor;
+    font-size: 14px;
+}
+%hover-color{
+  color: $hoverColor;
+}
+%button{
+    padding: 10px 38px;
+    color: $lightColor;
+    border: none;
+    outline: none;
+    background-color: $themeColor;
+ 
+ }
+ %button:hover{
+    color: #1b4a74;
+ }
+ %heading{
+    font-size: 36px !important;
+    color: $themeColor;
+    font-size: 25px;
+    font-weight: 700;
+}
+// header start
+@import "header";
+// header end
+
+// banner section strat
+.banner-content{
+    top: 5%;
+    text-align: center;
+
+    h3{
+      font-size: 34px!important;
+    font-weight: 700;
+    background-color: transparent;
+    color: $lightColor;
+   span{
+    font-weight: 700;
+    background-color: transparent;
+    color: $lightColor
+   }
+    }
+    h2{
+        font-size: 34px;
+        font-weight: 700;
+        color: $lightColor;
+    }
+    p{
+        color: $lightColor;
+        font-size: 12px;
+    }
+}
+
+.btns .button1{
+  @extend %button;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.btns .button1:hover{
+    background-color: #9bc3e5;
+}
+.btns .button2{
+    background-color: transparent;
+    outline: 2px solid $lightColor;
+    @extend %button;
+}
+// banner section end
+
+// explorre section start
+.plane{
+    position: relative;
+}
+.plane::before{
+    content: '';
+    position: absolute;
+    background: url(../assets/asset\ 13.gif);
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    background-size: cover;
+    right: 0;
+}
+
+.explore-heading{
+    color: $themeColor;
+    font-size: 44px;
+    font-weight: 700;
+}
+.explore-content1{
+    color: $fontColor;
+    line-height: 1.7;
+    font-weight: 500;
+}
+.explore-content2{
+    @extend .explore-content1;
+}
+.awards-heading{
+  @extend .explore-heading;  
+font-size: 27px;
+}
+.awards-content{
+    @extend .explore-content1;
+}
+
+// explore section end
+
+// places strat
+.places-content{
+    bottom: -25%;
+    padding: 0 10px;
+    transition: 1s;
+    h4{
+        color: $lightColor;
+        font-weight: 500;
+    transition: 1s;
+    }
+    p{
+        color: $lightColor;
+        opacity: 0;
+    transition: 1s;
+
+    }
+}
+.image{
+    display: none;
+    transition: opacity 0.5s, margin-top 0.5s;
+}
+
+
+.place-box:hover .places-content{
+     bottom: 17%;
+     h4{
+         opacity: 1;
+         transition: 1s;
+     }
+     p{
+        opacity: 1;
+        transition: 1s;
+     }
+
+}
+
+// places end
+
+// search country start
+.bg-clr{
+    background-color: #f9f9f9;
+    padding: 19px 0;
+    margin-top: 50px;
+}
+.search-content{
+    position: relative;
+
+    h3{
+        font-size: 36px !important;
+        color: $themeColor;
+        font-size: 25px;
+        font-weight: 700;
+    }
+     
+}
+
+.input-mail input{
+    width: 100%;
+    background-color: $lightColor;
+    padding: 15px 10px;
+    border: none;
+    outline: none;
+}
+.input-mail {
+    button{
+        background-color: rgb(61, 61, 226);
+        color: $lightColor;
+        padding: 15px 50px;
+        border: none;
+        outline: none;
+        margin-top: 20px;
+        transition: $transition-4;
+    }
+}
+
+.input-mail{
+    button:hover{
+        background-color: rgb(123, 123, 197);
+    }
+}
+
+.search-countries a{
+    background-color: rgba(172, 170, 170, .4);
+    color:rgb(54, 54, 54) ;
+    padding: 7px 10px;
+    transition: $transition-4;
+    margin-right: 7px;
+}
+.search-countries a:hover{
+    background-color: rgb(61, 61, 226);
+    color: $lightColor;
+}
+// search country end
+
+// package satrt
+.pkg-img{
+    overflow: hidden;
+    background-color: $darkColor;
+}
+.pkg-img img{
+    position: relative;
+    transition: $transition-4;
+}
+.pkg-img img::before{
+    content: '';
+    background-color: rgba(0, 0, 0,.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.pkg-badge{
+    position: absolute;
+    color: $fontColor;
+    top: 16px;
+    left:20px;
+    
+}
+.badge-hover{
+    background-color: $lightColor;
+    padding: 7px;
+    opacity: 0;
+    visibility: hidden;
+    transition: $transition-4;
+    text-transform: uppercase;
+}
+.badge-show{
+    background-color: $lightColor;
+    padding: 7px;
+    transition: $transition-4;
+    text-transform: uppercase;
+}
+.pkg:hover .pkg-badge .badge-hover{
+opacity: 1;
+visibility: visible;
+}
+.pkg:hover .pkg-badge .badge-show{
+opacity: 0;
+visibility: hidden;
+}
+.pkg-name a{
+    font-weight: 700;
+    color: $darkColor!important;
+    transition: $transition-4;
+    font-size: 21px;
+}
+.pkg-img:hover.pkg-name + a{
+    color: $themeColor;
+}
+.pkg-line{
+    width: 100%;
+    height: 1px;
+    background-color: #a8a6a6;
+}
+.pkg-discription{
+    font-size: 14px;
+}
+.pkg-detail-btn{
+    padding: 10px 38px;
+    color: $lightColor;
+    border: none;
+    outline: none;
+    background-color: $themeColor;
+    transition: $transition-4;
+}
+.pkg-detail-btn:hover{
+    background-color: rgba(105, 105, 236, 0.5);
+}
+.pkg:hover .pkg-img img{
+    transform: scale(1.2);
+    opacity: .5;
+}
+.price{
+    font-weight: 700;
+    color: $fontColor;
+}
+// package end
+
+// family start
+.family-bg-img{
+    background-image: url(../assets/asset\ 27.jpeg);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-size: cover;
+}
+.family-sec{
+    color: $lightColor;
+}
+.family-head{
+    font-weight: 700;
+    font-size: 35px;
+}
+
+// family end
+// Agency start
+#agency{
+    position: relative;
+}
+#agency::before{
+   content: '';
+   position: absolute; 
+   width: 300px;
+   height: 100%;
+   left: 0;
+   top: 0;
+   background: linear-gradient(90deg, rgb(255 255 255 / 100%) 10%, rgba(255,0,0,0) 100%);
+   z-index: 1;
+}
+#agency::after{
+   content: '';
+   position: absolute; 
+   width: 300px;
+   height: 100%;
+   right: 0;
+   top: 0;
+   background: linear-gradient(270deg, rgb(255 255 255 / 100%) 10%, rgba(255,0,0,0) 100%);
+   z-index: 1;
+}
+// Agency end
+// budget start
+.budget-bg-img{
+    background-image: url(../assets/asset\ 111.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.budget-content {
+    h3 {
+        @extend %heading;
+        
+    }
+    p{
+        color: $fontColor;
+        font-size: 17px;
+    }
+}
+.info-numeric p{
+    color: $themeColor;
+}
+.count+span{
+    color: $themeColor;
+    font-weight: 700;
+    font-size: 21px;
+}
+.info-numeric p:first-child{
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.family-img{
+    animation: num-up 2s infinite alternate ease;
+}
+@keyframes num-up{
+    0%{
+        transform: translateY(2px);
+    }
+    100%{
+        transform: translateY(15px);
+    }
+}
+.blog-heading h3{
+    @extend  %heading;
+    font-weight: 700;
+}
+.blog-heading  p{
+    color: $fontColor;
+    font-size: 17px;
+    font-weight: 400;
+}
+.trip-date{
+    color: $lightColor;
+    background-color: $themeColor;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 14px;
+}
+.blog-content h4{
+    @extend %heading;
+    font-size: 19px!important;
+    transition: $transition-4;
+}
+.blog-content p{
+    color: $fontColor;
+    font-size: 14px;
+}
+.blog-content a{
+    color: $themeColor;
+    font-weight: 700;
+    letter-spacing: 1.5;
+    transition: $transition-4;
+}
+.blog-content:hover h4{
+    color: blue;
+}
+.blog-content a:hover{
+    color: blue;
+}
+// budget end
+// service start
+.service-bg-clr{
+    @extend .bg-clr;
+    margin-top: 50px!important;
+}
+.service{
+    box-shadow: 0 0 4px #a8a6a6;
+    position: relative;
+}
+.service img{
+    height: 55px;
+}
+.mob-service-img img{
+    height: 55px;
+}
+.service-content h3{
+    color: $themeColor;
+    font-size: 20px;
+}
+.service-content p{
+    color: $fontColor;
+}
+.service::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background-color: aqua;
+    right: 100%;
+    top: 0;
+    transition: $transition-4;
+    z-index: 1;
+}
+.service:hover .service::after{
+    width: 100%;
+    right: 0;
+    top: 0;
+}
+.slide-service{
+    border-top: 1px solid #e6e3e3;
+    border-bottom: 1px solid #e6e3e3;
+}
+.mob-service-slider{
+    padding-bottom: 100px;
+}
+#service .owl-nav button.owl-prev,
+#service .owl-nav button.owl-next{
+           background-color: $themeColor;
+           border-radius: 50%;
+           width: 30px;
+           height: 30px;
+}
+// service end
+
+// testimononial start
+
+.testimonial-bg-img{
+    background-image: url(../assets/asset\ 61.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#testimonial .item{
+  color: $lightColor;
+//   padding: 30px 0;
+}
+#testimonial .item h3{
+    font-weight: 700;
+    font-size: 37px;
+}
+.testimonial-author::after{
+    content: '-';
+    padding: 0 8px;
+}
+// testimononial end
+
+// footer start
+@import "footer";
+// footer end
+
+// toast start
+.toast:not(.show){
+    display: block;
+}
+.toast-content a{
+    font-size: 21px;
+    color: $themeColor;
+}
+.toast-content p{
+    color: $fontColor;
+    font-size: 17px;
+}
+
+.toast-cross{
+    top: -15px;
+    right:-15px;
+    background-color: $themeColor;
+    padding: 5px;
+}
+// toast end
+
+// --------login/register page  start-------
+@import "login-page";
+// -----------login/register page  end--------
+
+// -----------contact page  start-------------
+@import "contact-page";
+// ----------contact page  end--------------
+
+// ---------blog page  start-------------
+@import "blog-page";
+// -------blog page  end---------------
+
+// -----------about page  start---------------
+@import "about-page";
+// -----------about page  end--------------
+
+// media query strat
+@import "media-query";
+// media query end
