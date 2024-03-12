@@ -2,14 +2,15 @@
 .sticky-top {
   position: fixed;
   top: 0;
-  z-index: 1000; /* Adjust z-index as needed */
+  z-index: 1000;
+  /* Adjust z-index as needed */
 }
 
 /* Sticky from bottom */
 .sticky-bottom {
   position: fixed;
   bottom: 0;
-  z-index: 1000; /* Adjust z-index as needed */
+  z-index: 1000;
 }
 
 /* poppins-300 - latin */
@@ -128,6 +129,66 @@ body {
   color: #194d7a;
   font-size: 25px;
   font-weight: 700;
+}
+
+.search-destination {
+  box-shadow: 0 0 0 20px rgb(239, 234, 234);
+}
+
+.search-destination input {
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  padding-right: 60px;
+  box-shadow: 0 0 2px rgb(210, 196, 196);
+}
+
+.search-destination i {
+  right: 1%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-content {
+  width: 100vw !important;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.search-feature li a {
+  color: gray;
+  background-color: rgb(230, 225, 225);
+  padding: 10px 20px;
+  transition: 0.4s;
+}
+
+.search-feature li:hover a {
+  background-color: gray;
+  color: rgb(230, 225, 225);
+}
+
+.search-feature li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.feature-content-heading {
+  margin-right: 10px;
+  display: inline-block;
+  color: gray;
+}
+
+.search-feature li {
+  margin-bottom: 27px;
+}
+
+.btn-close {
+  width: 30px;
+  height: 30px;
+  background-color: #f8f3f3;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .top_header {
@@ -1575,6 +1636,9 @@ header {
     background-color: #194d7a;
     top: 0;
     right: 0;
+  }
+  .search-feature li {
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {

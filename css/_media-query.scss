@@ -50,8 +50,6 @@
     .blog-heading p {
         font-size: 15px;
     }
-
-    
 }
 @media screen and (min-width: 768px){
     .mob-main-menu{
@@ -93,7 +91,6 @@
         top: 0;
         right: 0;
     }
-    
 }
 @media screen and (min-width: 992px){
     
@@ -125,6 +122,9 @@
             top: 0;
             right: 0;
         }
+    }
+    .search-feature li {
+        margin-bottom: 0;
     }
 }
 @media screen and (min-width: 1200px){

@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
     <!-- favicon -->
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
-    
+
     <!-- custom css file -->
     <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -192,7 +192,6 @@
                         <li>
                             <a href="#">Pages
                                 <i class="fa-solid fa-angle-down fa-xs" style="color: #f7f7f7"></i>
-
                             </a>
                             <ul class="sub-menu">
                                 <li><a href="#">Faq</a></li>
@@ -207,7 +206,7 @@
                 <div class="col-4">
                     <ul class="custom-icons d-flex justify-content-end mb-0">
                         <li class="me-3">
-                            <a href="#">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 <i class="fa-solid fa-magnifying-glass fa-lg"></i>
                             </a>
                         </li>
@@ -253,7 +252,8 @@
                         <li class="position-relative d-flex align-items-center">
                             <a href="#">Destination
 
-                                <i class="fa-solid fa-angle-down fa-xs position-absolute arrow top-50" style="color: #f7f7f7"></i>
+                                <i class="fa-solid fa-angle-down fa-xs position-absolute arrow top-50"
+                                    style="color: #f7f7f7"></i>
                             </a>
 
                             <div class="mob-mega-menu">
@@ -348,7 +348,8 @@
                         <li class="position-relative d-flex align-items-center page">
                             <a href="#">
                                 Pages
-                                <i class="fa-solid fa-angle-down fa-xs position-absolute arrow top-50" style="color: #f7f7f7"></i>
+                                <i class="fa-solid fa-angle-down fa-xs position-absolute arrow top-50"
+                                    style="color: #f7f7f7"></i>
                             </a>
 
                             <div class="mob-sub-menu">
@@ -396,7 +397,7 @@
 
                     <ul class=" custom-icons d-flex justify-content-end mb-0">
                         <li class="me-3">
-                            <a href="#">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 <i class="fa-solid fa-magnifying-glass fa-lg"></i>
                             </a>
                         </li>
@@ -406,16 +407,45 @@
                             </a>
                         </li>
                     </ul>
-
                 </div>
-
-
             </div>
-
-
         </div>
     </header>
     <!-- for mobile screen end -->
+
+    <!-- modal -->
+    <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content w-100">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body w-100 d-flex align-items-center">
+                    <form action="" class="w-100">
+                        <div class="d-flex flex-column justify-content-center">
+                            <div class="search-destination position-relative m-auto border-black w-75 mb-5">
+                                <input type="search" placeholder="Search" class="w-100 bg-light">
+                                <i class="fa-solid fa-magnifying-glass fa-sm position-absolute"></i>
+                            </div>
+                            <div
+                                class="d-flex flex-column flex-lg-row row-gap-4 justify-content-center align-items-center">
+                                <span class="feature-content-heading">Popular searches</span>
+                                <ul
+                                    class="d-flex flex-wrap  justify-content-center align-items-center mb-0 ps-0 search-feature">
+                                    <li><a href="#">Featured</a></li>
+                                    <li><a href="#">Trendy</a></li>
+                                    <li><a href="#">Sale</a></li>
+                                    <li><a href="#">New</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- modal-end -->
 
     <!-- banner section start -->
     <section>
@@ -464,8 +494,8 @@
     </section>
     <!-- form end -->
 
-     <!-- footer start -->
-     <footer class="d-none d-md-block">
+    <!-- footer start -->
+    <footer class="d-none d-md-block">
         <div class="footer-top pt-100 pb-5">
             <div class="container">
                 <div class="row gy-4">
@@ -634,229 +664,229 @@
     </footer>
     <!-- footer end -->
 
-     <!-- for mobile -->
-     <footer class="d-md-none pt-80">
-       <div class="container">
-        <div class="accordion  overflow-x: hidden;" id="accordionPanelsStayOpenExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                        aria-controls="panelsStayOpen-collapseOne">
-                        OUR LOCATION
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                    <div class="accordion-body">
-                        <div class="row row-gap-4">
-                            <div class="col-2">
-                                <i class="fa-solid fa-location-dot fa-lg" style="color: #1a1a1a;"></i>
-                            </div>
-                            <div class="col-10">
-                                No: 58 A, East Madison Street, Baltimore, MD, USA 4508
-                            </div>
-                            <div class="col-2">
-                                <i class="fa-solid fa-phone fa-lg" style="color: #262627;"></i>
-                            </div>
-                            <div class="col-10">
-                                <div class="row">
-                                    <div class="col-12">
-                                        000 - 123 - 456788
-
-                                    </div>
-
-                                    <div class="col-12">
-                                        000 - 123 - 456789
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <i class="fa-solid fa-envelope" style="color: #1e1e1f;"></i>
-                            </div>
-                            <div class="col-10 contact-mail">
-                                <a href="#">info@example.com</a>
-                            </div>
-                        </div>
-                        <ul class="social-links d-flex mt-4 ps-0">
-                            <li class="me-3"><a href="#">
-                                    <i class="fa-brands fa-twitter fa-lg" style="color: #eaecf1;"></i>
-                                </a></li>
-                            <li class="me-3"><a href="#">
-                                    <i class="fa-brands fa-facebook fa-lg" style="color: #eaeaeb;"></i>
-                                </a></li>
-                            <li><a href="#">
-                                    <i class="fa-brands fa-instagram fa-lg" style="color: #eaeaeb;"></i>
-                                </a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseTwo">
-                        HOTEL
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <ul class="ps-0 footer-sec">
-                            <li>
-                                <a href="#">
-                                    Hotel Booking
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">Cancellation</a>
-                            </li>
-                            <li>
-                                <a href="#">International Hotel</a>
-                            </li>
-                            <li>
-                                <a href="#">Flight Booking</a>
-                            </li>
-                            <li>
-                                <a href="#">Press Release</a>
-                            </li>
-                            <li>
-                                <a href="#">Best Deals</a>
-                            </li>
-                            <li>
-                                <a href="#">Payments</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseThree">
-                        INFORMATION
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <ul class="footer-sec">
-                            <li><a href="#">
-                                    Help
-                                </a></li>
-                            <li><a href="#">
-                                    Career
-                                </a></li>
-                            <li><a href="#">
-                                    Office Location
-                                </a></li>
-                            <li><a href="#">
-                                    Advanced Search
-                                </a></li>
-                            <li><a href="#">
-                                    Cancellation Policy
-                                </a></li>
-                            <li><a href="#">
-                                    Checkout Details
-                                </a></li>
-                            <li><a href="#">
-                                    Booking Status
-                                </a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseFour">
-                        GALLERY
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <div class="container">
-                            <div class="row gy-3 gx-5">
-                                <div class="col-4">
-                                    <img src="assets/asset 67.png" alt="" class="w-100">
-                                </div>
-                                <div class="col-4">
-                                    <img src="assets/asset 68.png" alt="" class="w-100">
-    
-                                </div>
-                                <div class="col-4">
-                                    <img src="assets/asset 69.png" alt="" class="w-100">
-    
-                                </div>
-                                <div class="col-4">
-                                    <img src="assets/asset 70.png" alt="" class="w-100">
-    
-                                </div>
-                                <div class="col-4">
-                                    <img src="assets/asset 71.png" alt="" class="w-100">
-    
-                                </div>
-                                <div class="col-4">
-                                    <img src="assets/asset 72.png" alt="" class="w-100">
-    
-                                </div>
-                            </div>
-                            <h4 class="sign-up-lable mt-4 mb-3">SIGN UP</h4>
-                            <div class="position-relative email-box">
-                                <input type="text" placeholder="Your Email Adress">
-                                <div class="v-line"></div>
-                                <button class="position-absolute send-btn">SEND</button>
-                            </div>
-                            <span class="notice mt-3">* We do not spam</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-       </div>
-        
-       
-
-      <!-- mob footer bottom  -->
-      <div class="footer-bottom ptb-80">
+    <!-- for mobile -->
+    <footer class="d-md-none pt-80">
         <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-12 d-flex justify-content-center">
-                    <p class="instruction mb-0">All Right Reserved © 2023 Designthemes</p>
-                </div>
-                <div class="col-12 text-center">
-                    <div class="footer-logo p-4">
-                        <a href="#">
-                            <img src="assets/asset 6.png" alt="">
-                        </a>
+            <div class="accordion  overflow-x: hidden;" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            OUR LOCATION
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <div class="row row-gap-4">
+                                <div class="col-2">
+                                    <i class="fa-solid fa-location-dot fa-lg" style="color: #1a1a1a;"></i>
+                                </div>
+                                <div class="col-10">
+                                    No: 58 A, East Madison Street, Baltimore, MD, USA 4508
+                                </div>
+                                <div class="col-2">
+                                    <i class="fa-solid fa-phone fa-lg" style="color: #262627;"></i>
+                                </div>
+                                <div class="col-10">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            000 - 123 - 456788
+
+                                        </div>
+
+                                        <div class="col-12">
+                                            000 - 123 - 456789
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <i class="fa-solid fa-envelope" style="color: #1e1e1f;"></i>
+                                </div>
+                                <div class="col-10 contact-mail">
+                                    <a href="#">info@example.com</a>
+                                </div>
+                            </div>
+                            <ul class="social-links d-flex mt-4 ps-0">
+                                <li class="me-3"><a href="#">
+                                        <i class="fa-brands fa-twitter fa-lg" style="color: #eaecf1;"></i>
+                                    </a></li>
+                                <li class="me-3"><a href="#">
+                                        <i class="fa-brands fa-facebook fa-lg" style="color: #eaeaeb;"></i>
+                                    </a></li>
+                                <li><a href="#">
+                                        <i class="fa-brands fa-instagram fa-lg" style="color: #eaeaeb;"></i>
+                                    </a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12">
-                    <ul class="d-flex justify-content-center mb-0 ps-0">
-                        <li class="me-2"><a href="#">
-                                <img src="assets/asset 135.svg" alt="">
-                            </a></li>
-                        <li class="me-2"><a href="#">
-                                <img src="assets/asset 136.svg" alt="">
-                            </a></li>
-                        <li class="me-2"><a href="#">
-                                <img src="assets/asset 135.svg" alt="">
-                            </a></li>
-                        <li class="me-2"><a href="#">
-                                <img src="assets/asset 136.svg" alt="">
-                            </a></li>
-                        <li class="me-2"><a href="#">
-                                <img src="assets/asset 135.svg" alt="">
-                            </a></li>
-                        <li><a href="#">
-                                <img src="assets/asset 136.svg" alt="">
-                            </a></li>
-                    </ul>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            HOTEL
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul class="ps-0 footer-sec">
+                                <li>
+                                    <a href="#">
+                                        Hotel Booking
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">Cancellation</a>
+                                </li>
+                                <li>
+                                    <a href="#">International Hotel</a>
+                                </li>
+                                <li>
+                                    <a href="#">Flight Booking</a>
+                                </li>
+                                <li>
+                                    <a href="#">Press Release</a>
+                                </li>
+                                <li>
+                                    <a href="#">Best Deals</a>
+                                </li>
+                                <li>
+                                    <a href="#">Payments</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            INFORMATION
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul class="footer-sec">
+                                <li><a href="#">
+                                        Help
+                                    </a></li>
+                                <li><a href="#">
+                                        Career
+                                    </a></li>
+                                <li><a href="#">
+                                        Office Location
+                                    </a></li>
+                                <li><a href="#">
+                                        Advanced Search
+                                    </a></li>
+                                <li><a href="#">
+                                        Cancellation Policy
+                                    </a></li>
+                                <li><a href="#">
+                                        Checkout Details
+                                    </a></li>
+                                <li><a href="#">
+                                        Booking Status
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseFour">
+                            GALLERY
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <div class="container">
+                                <div class="row gy-3 gx-5">
+                                    <div class="col-4">
+                                        <img src="assets/asset 67.png" alt="" class="w-100">
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="assets/asset 68.png" alt="" class="w-100">
+
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="assets/asset 69.png" alt="" class="w-100">
+
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="assets/asset 70.png" alt="" class="w-100">
+
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="assets/asset 71.png" alt="" class="w-100">
+
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="assets/asset 72.png" alt="" class="w-100">
+
+                                    </div>
+                                </div>
+                                <h4 class="sign-up-lable mt-4 mb-3">SIGN UP</h4>
+                                <div class="position-relative email-box">
+                                    <input type="text" placeholder="Your Email Adress">
+                                    <div class="v-line"></div>
+                                    <button class="position-absolute send-btn">SEND</button>
+                                </div>
+                                <span class="notice mt-3">* We do not spam</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+
+
+
+        <!-- mob footer bottom  -->
+        <div class="footer-bottom ptb-80">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-12 d-flex justify-content-center">
+                        <p class="instruction mb-0">All Right Reserved © 2023 Designthemes</p>
+                    </div>
+                    <div class="col-12 text-center">
+                        <div class="footer-logo p-4">
+                            <a href="#">
+                                <img src="assets/asset 6.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <ul class="d-flex justify-content-center mb-0 ps-0">
+                            <li class="me-2"><a href="#">
+                                    <img src="assets/asset 135.svg" alt="">
+                                </a></li>
+                            <li class="me-2"><a href="#">
+                                    <img src="assets/asset 136.svg" alt="">
+                                </a></li>
+                            <li class="me-2"><a href="#">
+                                    <img src="assets/asset 135.svg" alt="">
+                                </a></li>
+                            <li class="me-2"><a href="#">
+                                    <img src="assets/asset 136.svg" alt="">
+                                </a></li>
+                            <li class="me-2"><a href="#">
+                                    <img src="assets/asset 135.svg" alt="">
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="assets/asset 136.svg" alt="">
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
     <!-- footer end-->
     <!-- track arrow strt -->
@@ -864,9 +894,9 @@
 
         <div class="track-arrow">
             <a href="#">
-           <i class="fa-solid fa-arrow-up fa-lg" style="color: #74C0FC;"></i>
+                <i class="fa-solid fa-arrow-up fa-lg" style="color: #74C0FC;"></i>
             </a>
-       </div>
+        </div>
 
     </section>
     <!-- track arrow end -->
